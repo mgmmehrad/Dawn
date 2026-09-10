@@ -1,0 +1,23 @@
+name: Dawn
+version: 1.0.0
+main: net.mehradmgm.dawn.Dawn
+folia-supported: true
+api-version: '1.13'
+
+author: MehradMGM
+description: Detects players using the Dawn Minecraft Client.
+website: https://dawn.gg/
+
+softdepend:
+  - PlaceholderAPI
+
+commands:
+  dawn:
+    description: Dawn Client detection commands
+    usage: /dawn <lists|reload>
+    permission: dawn.command
+
+permissions:
+  dawn.command:
+    description: Allows access to Dawn commands
+    default: op
